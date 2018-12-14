@@ -1,0 +1,26 @@
+{
+  "name": "@tiezeehc/html-boilerplate",
+  "version": "1.0.0",
+  "description": "Creates a simple html boilerplate",
+  "repository": "https://github.com/ParkerShelton/HTML-Boilerplate/",
+  "scripts": {
+    "start": "concurrently -k \"npm run dev\" \"npm run watch-css\"",
+    "dev": "lite-server",
+    "build-css": "node-sass -w ./assets/scss/ -o ./assets/css/",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "keywords": [
+    "html",
+    "boilerplate",
+    "template",
+    "git",
+    "npm"
+  ],
+  "author": "Parker Shelton",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^4.0.1",
+    "lite-server": "^2.4.0",
+    "node-sass": "^4.9.4"
+  }
+}
